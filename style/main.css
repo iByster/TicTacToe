@@ -1,0 +1,165 @@
+@font-face {
+  font-family: pixelFont;
+  src: url(../fonts/8-bit-pusab.ttf);
+}
+
+body {
+  background-color: #fcf8e3;
+}
+
+.playboard .col-4 {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  padding: 0;
+  position: relative;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.playboard {
+  width: 300px;
+  padding: 0;
+}
+
+.playboard .row {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.player-side {
+  width: 100px;
+  height: 250px;
+}
+
+.player-tag {
+  height: 100px;
+  font-family: pixelFont;
+}
+
+.weapon {
+  margin-top: 60px;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.mark {
+  position: absolute;
+  width: 98px;
+  z-index: -1;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+#reset-game-btn {
+  padding: 0;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.line {
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.horizontal-line {
+  width: 280px;
+  height: 10px;
+  top: 50px;
+  left: 9px;
+}
+
+.vertical-line {
+  width: 10px;
+  height: 280px;
+  top: 10px;
+}
+
+.diagonal-line {
+  left: -40px;
+  width: 370px;
+  height: 10px;
+  top: 145px;
+}
+
+.diagonal-line-right {
+  transform: rotate(-45deg);
+}
+
+.diagonal-line-left {
+  transform: rotate(45deg);
+}
+
+#player-one .player-tag {
+  color: red;
+}
+
+#player-two .player-tag {
+  color: green;
+}
+
+.player-one-line-color {
+  background-color: rgba(130, 0, 124, 0.507);
+}
+
+.player-two-line-color {
+  background-color: rgba(217, 255, 0, 0.637);
+}
+
+@keyframes slide-horizontal {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 280px;
+  }
+}
+
+@keyframes slide-vertical {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 280px;
+  }
+}
+
+@keyframes slide-diagonal {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 370px;
+  }
+}
+
+.line-animation-horizontal {
+  animation-name: slide-horizontal;
+  animation-duration: 1s;
+}
+
+.line-animation-vertical {
+  animation-name: slide-vertical;
+  animation-duration: 1s;
+}
+
+.line-animation-diagonal {
+  animation-name: slide-diagonal;
+  animation-duration: 1s;
+}

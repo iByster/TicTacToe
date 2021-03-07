@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>TIC TAC TOE</h1>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div id="player-one" class="col player-side">
+          <p class="text-center weapon" data-mark>X</p>
+          <p class="text-center player-tag">P1: <span data-score-p1>0</span></p>
+        </div>
+        <div class="playboard col">
+          <div class="row">
+            <div class="col-4" data-squere="one">
+              <img src="" class="mark" alt="" />
+            </div>
+            <div class="col-4" data-squere="two">
+              <img src="" class="mark" alt="" />
+            </div>
+            <div class="col-4" data-squere="three">
+              <img src="" class="mark" alt="" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4" data-squere="four">
+              <img src="" class="mark" alt="" />
+            </div>
+            <div class="col-4" data-squere="five">
+              <img src="" class="mark" alt="" />
+            </div>
+            <div class="col-4" data-squere="six">
+              <img src="" class="mark" alt="" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4" data-squere="seven">
+              <img src="" class="mark" alt="" />
+            </div>
+            <div class="col-4" data-squere="eight">
+              <img src="" class="mark" alt="" />
+            </div>
+            <div class="col-4" data-squere="nine">
+              <img src="" class="mark" alt="" />
+            </div>
+          </div>
+        </div>
+        <div id="player-two" class="col player-side">
+          <p class="text-center weapon" data-mark>O</p>
+          <p class="text-center player-tag">P2: <span data-score-p2>0</span></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 col-centered">
+          <button
+            id="reset-game-btn"
+            data-reset-game
+            class="btn btn-outline-secondary"
+          >
+            New Game
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>
